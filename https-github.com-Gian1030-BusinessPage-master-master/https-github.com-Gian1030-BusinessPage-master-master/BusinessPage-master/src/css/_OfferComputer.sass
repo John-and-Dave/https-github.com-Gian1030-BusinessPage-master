@@ -1,0 +1,39 @@
+.offerComputer
+    +titleOffer()
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    height: 280vh
+    & .articles
+        width: 30%
+        margin-right: 3vh
+        +flex(space-between)
+        overflow: hidden
+        & article
+            position: absolute
+            height: 120vh
+            width: 30%
+            &:nth-of-type(2)
+                top: 160vh
+            & .scrollItems
+                width: 100%
+                position: absolute
+                transform-origin: bottom
+            & .titleArt 
+                font-size: 2.5rem
+            & .content
+                width: 100%
+                margin: 0
+    & .images
+        height: 260vh
+        width: 60%
+        +flex(space-between)
+        overflow: hidden
+        & .img
+            height: 120vh
+            +flex(flex-start)
+            & img
+                width: 100%
+                transform: translateX(-2%)
+                &:nth-of-type(2)
+                    transform: translateX(5%)

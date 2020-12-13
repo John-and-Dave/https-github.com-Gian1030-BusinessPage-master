@@ -1,0 +1,43 @@
+.contact
+    width: 100%
+    height: 170vh
+    +flex(space-around)
+    & .contents
+        height: 70vh
+        width: 100%
+        +flex(space-around)
+.title
+      font-size: 3rem
+.contact .title
+    margin-top: 5vh
+.content
+    font-size: 1.2rem
+    width: 80%
+.contactForm
+    height: 80vh
+    +flex(space-around)
+    width: 100%
+    & label
+        width: 80%
+    & p
+    font-size: 2rem
+    color: lightslategray
+    & textarea, input
+        border: 1px solid black
+        border-radius: 35px
+        width: 100%
+        padding: 0 1.25rem 0 1.25rem
+        font-size: 1.5rem
+        height: 7vh
+    & textarea
+        height: 35vh
+        padding: 1rem 2rem 1rem 2rem
+    & button
+        width: 60%
+        background-color: lightslategray
+        border: none
+        height: 5vh
+        border-radius: 25px
+        text-transform: uppercase
+        color: white
+        font-size: 1.5rem

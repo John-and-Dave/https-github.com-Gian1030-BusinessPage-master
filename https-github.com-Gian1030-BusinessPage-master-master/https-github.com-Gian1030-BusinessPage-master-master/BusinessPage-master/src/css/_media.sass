@@ -1,0 +1,157 @@
+html
+    font-size: 10px
+
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+
+@media (orientation: portrait) and (min-width: 768px)
+    html
+        font-size: 15px
+
+@media (orientation: portrait) and (min-width: 1024px)
+    html
+        font-size: 25px
+
+       
+
+
+
+@media (orientation: landscape)
+
+    /* home */ 
+
+    .homeImg
+        width: 80%
+        left: 10%
+    
+
+    /* about */ 
+
+    .aboutPage
+        height: 250vh
+        & .aboutImg
+            width: 70%
+            height: 60vh
+
+    /* offer */ 
+
+    .offer
+        height: 380vh
+        & .img
+            height: 90vh
+            width: 80%
+        
+
+    /* contact */
+
+    .contact
+        height: 200vh
+        .contactForm
+            height: 120vh
+            & input
+                height: 10vh
+            & textarea
+                height: 50vh
+                padding: 1rem 2rem 1rem 2rem
+            & button
+                width: 40%
+                height:  8vh
+    /* footer */
+
+    footer
+        height: 100vh
+        & div
+            width: 80%
+            font-size: 1.5rem
+        & .header
+            font-size: 2rem
+            color: gray
+    
+    /* nav */
+
+    .navBtn
+        & .bot
+            &.active
+                transform: rotate(45deg) translateX(-65%) translateY(50%)
+    
+@media (orientation: landscape) and (min-width: 640px)
+    html
+        font-size: 12px
+
+@media (orientation: landscape) and (min-width: 768px)
+    html
+        font-size: 14px
+@media (orientation: landscape) and (min-width: 1024px)
+    html
+        font-size: 22px
+
+    /* about */
+
+    .aboutContent
+        width: 40%
+        &:nth-of-type(odd).active
+            transform: translateX(60%) translateY(0)  
+        &:nth-of-type(even).active
+            transform: translateX(-60%) translateY(0)  
+    
+    /* footer */
+    
+    footer
+        & .socials
+            transform: translateX(60%)
+        & .contactFot
+            transform: translateX(10%)
+        & .partnership
+            transform: translateX(70%)
+        & .placeFot
+            transform: translateX(30%)
+
+@media (orientation: landscape) and (min-width: 1280px)
+    html
+        font-size: 22px
+    
+    /* home */ 
+    
+    .homeImg
+        width: 90%
+        height: 90%
+        left: 5%
+        top: 5%
+
+    /* contact */
+      
+
+    .contact
+        height: 120vh
+        flex-direction: row
+        flex-wrap: wrap
+        & .contents
+            align-self: flex-start
+            width: 50%
+        & .title  
+            width: 100%
+            text-align: center
+            margin-bottom: 5vh
+    .contactForm
+        justify-content: flex-start
+        align-self: flex-start
+        width: 50%
+        & label
+            margin-top: 3vh
+            &:nth-of-type(1)
+                margin-top: 0
+
+    /* NAV */
+
+    .navBtn
+        transform: rotate(-90deg)
+        left: 0
+
+    nav img
+        position: absolute
+        transform: rotate(90deg)
+        transform-origin: bottom right
+        bottom: 0
+        right: 665px
